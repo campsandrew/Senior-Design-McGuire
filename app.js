@@ -12,7 +12,8 @@ var users = require('./routes/users');
 var app = express();
 
 //DB setup
-mongoose.connect("mongodb://192.168.64.4:27017");
+//mongoose.connect("mongodb://192.168.64.4:27017");
+mongoose.connect("mongodb://aud-db");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

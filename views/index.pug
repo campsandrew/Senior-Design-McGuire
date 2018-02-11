@@ -12,19 +12,26 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='/stylesheets/w3-colors.css')
 		link(rel='stylesheet', href='/stylesheets/w3-classes.css')
-
+		
+		
 	body(class='bg')
 		div(class='w3-display-middle')
 			h1(class='title-name') AUDIVITY
 			hr(class='w3-border-black' style='margin:auto; width:70%')
 			p(class='w3-center title-tag') One Story at a Time
-
-
+		
+		
+		// Buttons
 		div(class='w3-display-topleft w3-container w3-xlarge')
 			p
-				button(onclick="document.getElementById('login').style.display='block'" class='w3-button w3-black' style='border:2px solid #02B3B0') login
+				button(onclick="document.getElementById('login').style.display='block'" class='w3-button w3-black') login
+			p
+				button(onclick="document.getElementById('').style.display='block'" class='w3-button w3-black') about
+			p
+				button(onclick="document.getElementById('').style.display='block'" class='w3-button w3-black') contact
 
 
+		// Login page
 		div(id='login' class='w3-modal')
 			div(class='w3-modal-content w3-animate-zoom' style='width:500px')
 				div(class='w3-container w3-display-container' style='background-color:#02B3B0')
@@ -32,5 +39,10 @@ html
 					h1 Welcome back
 				div(class='w3-container' style='height:550px')
 					img(src='/images/logo-grey.png' class='login-logo' height='200px' width='225px')
-
-
+					
+					
+		//Possible footer
+		//div(class="w3-black w3-bottom w3-padding-16" style='text-align:center')
+				
+				
+				

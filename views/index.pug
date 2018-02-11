@@ -10,26 +10,27 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		
 		link(rel='stylesheet', href='/stylesheets/style.css')
-		link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+		link(rel='stylesheet', href='/stylesheets/w3-colors.css')
+		link(rel='stylesheet', href='/stylesheets/w3-classes.css')
 
 	body(class='bg')
 		div(class='w3-display-middle')
-			h1(class='comp-name') AUDIVITY
-			hr(class='w3-border-grey' style='margin:auto; width:50%;')
-			p(class='w3-center' style='color: white; font-size: 25px; font: "Lato"') One Story at a Time
+			h1(class='title-name') AUDIVITY
+			hr(class='w3-border-black' style='margin:auto; width:70%')
+			p(class='w3-center title-tag') One Story at a Time
 
 
 		div(class='w3-display-topleft w3-container w3-xlarge')
 			p
-				button(onclick="document.getElementById('login').style.display='block'" class='w3-button w3-black' style='border: 2px solid #02B3B0') login
+				button(onclick="document.getElementById('login').style.display='block'" class='w3-button w3-black' style='border:2px solid #02B3B0') login
 
 
 		div(id='login' class='w3-modal')
-			div(class='w3-modal-content w3-animate-zoom' style='width: 500px')
-				div(class='w3-container w3-display-container' style='background-color: #02B3B0')
+			div(class='w3-modal-content w3-animate-zoom' style='width:500px')
+				div(class='w3-container w3-display-container' style='background-color:#02B3B0')
 					span(onclick="document.getElementById('login').style.display='none'" class='w3-button w3-display-topright w3-large') x
 					h1 Welcome back
-				div(class='w3-container' style='height: 550px')
-					img(src='/images/AudivityLogoGrey.png' class='login-logo' height='200px' width='225px')
+				div(class='w3-container' style='height:550px')
+					img(src='/images/logo-grey.png' class='login-logo' height='200px' width='225px')
 
 

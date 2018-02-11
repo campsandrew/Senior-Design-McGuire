@@ -9,7 +9,7 @@ services:
     volumes:
       - ./:/app
     ports:
-      - 3000:2376
+      - 3000:3000
     links:
       - mongodb
   mongodb:

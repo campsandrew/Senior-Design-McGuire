@@ -1,8 +1,26 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body, html {
+	height: 100%;
 }
 
-a {
-  color: #00B7FF;
+.bg {
+	/* The image for background */
+	background-image: url(/images/landing_background.jpg);
+
+	/* Full height */
+	min-height: 100%;
+
+	/* Center and scale the image */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.comp-name {
+	font-size: 70px;
+	color: #02B3B0;
+	font-family: "Lato", sans-serif;
+}
+
+.login-logo {
+	position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%) 
 }

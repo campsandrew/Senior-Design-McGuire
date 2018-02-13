@@ -6,10 +6,11 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
+var create = require('./routes/create');
+var dash = require('./routes/dashboard');
 
 var app = express();
 
-//TODO: get rid of this
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -24,6 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', index);	// Landing page
+app.use('/', create);
+app.use('/', dash);
 
 
 // TODO: Fix this error handling

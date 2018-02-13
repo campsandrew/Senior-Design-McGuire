@@ -190,8 +190,24 @@ a {
 	color: inherit
 }
 
-.bg {
+.bg-landing {
 	background-image: url(/images/landing_background.jpg);
+	min-height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-create {
+	background-image: url(/images/create_account.jpg);
+	min-height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-dashboard {
+	background-image: url(/images/dashboard.jpg);
 	min-height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;

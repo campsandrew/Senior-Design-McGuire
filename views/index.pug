@@ -14,7 +14,7 @@ html
 		link(rel='stylesheet', href='/stylesheets/w3-classes.css')
 		
 		
-	body(class='bg')
+	body(class='bg-landing')
 		div(class='w3-display-middle')
 			h1(class='title-name') AUDIVITY
 			hr(class='w3-border-black' style='margin:auto; width:70%')
@@ -22,7 +22,7 @@ html
 		
 		
 		// Buttons
-		div(class='w3-display-topleft w3-container w3-xlarge')
+		div(class='w3-display-topleft w3-container w3-large')
 			p
 				button(onclick="document.getElementById('login').style.display='block'" class='w3-button w3-black') login
 			p
@@ -40,7 +40,8 @@ html
 				div(class='w3-container' style='padding-top:2%; padding-bottom:4%')
 					img(src='/images/logo-grey.png' style='display:block; height:30%; width:30%; margin-left:auto; margin-right:auto')
 				div(class='w3-container' style='padding-bottom: 10%')
-					form(class='w3-container w3-card w3-padding-16 w3-white' target='_blank')
+					// Login Form
+					form(action='/login' class='w3-container w3-card w3-padding-16 w3-white')
 						div(class='w3-section')
 							label(style='font-weight:bold') Email
 							input(class='w3-input' style='width:95%' type='text' required name='Name')
@@ -49,7 +50,7 @@ html
 							input(class='w3-input' style='width:95%' type='text' required name='Email')
 						button(class='w3-button w3-teal w3-right' style='float:right') Continue
 						p(style='float:left; font-size:80%') 
-							a(href='create-account') Create an account
+							a(href='/create-account') Create an account
 					
 		// About page
 		div(id='about' class='w3-modal')

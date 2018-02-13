@@ -32,25 +32,24 @@ html
 
 
 		// Login page
-		div(id='login' class='w3-modal' style='padding-top:150px')
+		div(id='login' class='w3-modal' style='padding-top:10%')
 			div(class='w3-modal-content w3-animate-zoom' style='width:30%')
-				div(class='w3-container' style='height:60px; background-color:#02B3B0')
+				div(class='w3-container' style='background-color:#02B3B0')
 					span(onclick="document.getElementById('login').style.display='none'" class='w3-button w3-display-topright w3-small') x
 					h3 Log In
-				div(class='w3-container' style='padding-top:10px; padding-bottom:10px')
-					img(src='/images/logo-grey.png' height='100px' style='display:block; margin-left:auto; margin-right:auto')
-				div(class='w3-container w3-padding-large')
-					form(class='w3-container w3-card w3-padding-32 w3-white' target='_blank')
+				div(class='w3-container' style='padding-top:2%; padding-bottom:4%')
+					img(src='/images/logo-grey.png' style='display:block; height:30%; width:30%; margin-left:auto; margin-right:auto')
+				div(class='w3-container' style='padding-bottom: 10%')
+					form(class='w3-container w3-card w3-padding-16 w3-white' target='_blank')
 						div(class='w3-section')
 							label(style='font-weight:bold') Email
 							input(class='w3-input' style='width:95%' type='text' required name='Name')
 						div(class='w3-section')
 							label(style='font-weight:bold') Password
 							input(class='w3-input' style='width:95%' type='text' required name='Email')
-						button(type='submit' class='w3-button w3-teal w3-right' style='float:right') Continue
-						p(style='float:left; position:absolute; font-size:12px') 
-							a(href='url') Create an account
-				div(class='w3-container' style='height:30px')
+						button(class='w3-button w3-teal w3-right' style='float:right') Continue
+						p(style='float:left; font-size:80%') 
+							a(href='create-account') Create an account
 					
 		// About page
 		div(id='about' class='w3-modal')

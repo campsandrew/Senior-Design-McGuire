@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var create = require('./routes/create');
 var dash = require('./routes/dashboard');
+var about = require('./routes/about');
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);	// Landing page
 app.use('/', create);
+app.use('/', about);
 app.use('/', dash);
 
 
